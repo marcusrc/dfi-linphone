@@ -1,0 +1,24 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.21.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - nyc > istanbul-lib-instrument > babel-types > lodash:
+        patched: '2021-09-14T18:56:41.088Z'
+    - nyc > istanbul-lib-instrument > babel-generator > lodash:
+        patched: '2021-09-14T18:56:41.088Z'
+    - nyc > istanbul-lib-instrument > babel-traverse > lodash:
+        patched: '2021-09-14T18:56:41.088Z'
+    - nyc > istanbul-lib-instrument > babel-template > lodash:
+        patched: '2021-09-14T18:56:41.088Z'
+    - nyc > istanbul-lib-instrument > babel-generator > babel-types > lodash:
+        patched: '2021-09-14T18:56:41.088Z'
+    - nyc > istanbul-lib-instrument > babel-traverse > babel-types > lodash:
+        patched: '2021-09-14T18:56:41.088Z'
+    - nyc > istanbul-lib-instrument > babel-template > babel-types > lodash:
+        patched: '2021-09-14T18:56:41.088Z'
+    - nyc > istanbul-lib-instrument > babel-template > babel-traverse > lodash:
+        patched: '2021-09-14T18:56:41.088Z'
+    - nyc > istanbul-lib-instrument > babel-template > babel-traverse > babel-types > lodash:
+        patched: '2021-09-14T18:56:41.088Z'
