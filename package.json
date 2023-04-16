@@ -4,7 +4,9 @@
   "description": "linphonec wrapper",
   "main": "src/linphone.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/_mocha --require ts-node/register  ./tests"
+    "test": "./node_modules/mocha/bin/_mocha --require ts-node/register  ./tests",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -17,15 +19,17 @@
   "license": "MIT",
   "dependencies": {
     "dfi-debug-logger": "^0.1.5",
-    "ini": "^1.3.5"
+    "ini": "^1.3.5",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@types/ini": "^1.3.29",
     "@types/mocha": "^2.2.46",
     "@types/node": "^6.0.96",
-    "mocha": "^3.5.3",
-    "nyc": "^11.4.1",
+    "mocha": "^5.0.3",
+    "nyc": "^14.0.0",
     "ts-node": "^3.3.0",
     "typescript": "^2.6.2"
-  }
+  },
+  "snyk": true
 }
